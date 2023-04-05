@@ -56,9 +56,6 @@ async function init() {
   // 输出目录
   let targetDir = argTargetDir || defaultTargetDir;
 
-  const getProjectName = () =>
-    targetDir === "." ? path.basename(path.resolve()) : targetDir;
-
   let result: prompts.Answers<
     "projectName" | "overwrite" | "framework" | "variant"
   >;
@@ -117,7 +114,7 @@ async function init() {
             };
           }),
         },
-        // 判断类型是否有其他类型，如template-ts,react-swc
+        // 判断类型是否有其他类型，如react-ts,react
         {
           type: (framework: Framework) =>
             framework && framework.variants ? "select" : null,

@@ -8,4 +8,6 @@
 
 按照提示选择模板，主要是自己写的模板放在这里，选择`custom-reactcrud`
 
+具体代码逻辑可以查看src/index.ts
+
 

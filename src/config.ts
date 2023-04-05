@@ -1,11 +1,6 @@
 import {
   blue,
   cyan,
-  green,
-  lightRed,
-  magenta,
-  red,
-  reset,
   yellow
 } from 'kolorist'
 
@@ -21,7 +16,7 @@ export type FrameworkVariant = {
   display: string
   color: ColorFunc
 }
-
+// 只是用来学习用的  具体还是使用create-vite创建
 export const FRAMEWORKS: Framework[] = [
   // {
   //   name: 'vue',
@@ -72,16 +67,17 @@ export const FRAMEWORKS: Framework[] = [
         display: 'custom-reactcrud',
         color: yellow,
       },
-      {
-        name: 'react-swc',
-        display: 'JavaScript + SWC',
-        color: blue,
-      },
-      {
-        name: 'react-swc-ts',
-        display: 'TypeScript + SWC',
-        color: yellow,
-      },
+      // swc 启动有问题，暂时注释掉
+      // {
+      //   name: 'react-swc',
+      //   display: 'JavaScript + SWC',
+      //   color: blue,
+      // },
+      // {
+      //   name: 'react-swc-ts',
+      //   display: 'TypeScript + SWC',
+      //   color: yellow,
+      // },
     ],
   },
 ]
