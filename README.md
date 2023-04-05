@@ -1,7 +1,14 @@
 # 安装依赖包
 `pnpm i`
 
-# 启动命令，执行选择模板
+# 实际使用中启动命令
+在一个目录下
+生成package.json
+`npm init `
+启动运行命令，下载模板
+`pnpm  create scoffolding`
+
+# 源代码启动命令，执行选择模板
 使用esno来运行 ts 代码
 
 `npx esno src/index.ts 模板输出文件目录|react-project`

@@ -1,10 +1,10 @@
 {
   "name": "create-scoffolding",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "type": "module",
   "description": "自己项目的脚手架",
   "bin": {
-    "create-scaffold": "index.js",
+    "create-scoffolding": "index.js",
     "cva": "index.js"
   },
   "main": "index.js",
