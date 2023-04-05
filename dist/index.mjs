@@ -55,17 +55,18 @@ const FRAMEWORKS = [
         name: "custom-reactcrud",
         display: "custom-reactcrud",
         color: yellow
-      },
-      {
-        name: "react-swc",
-        display: "JavaScript + SWC",
-        color: blue
-      },
-      {
-        name: "react-swc-ts",
-        display: "TypeScript + SWC",
-        color: yellow
       }
+      // swc 启动有问题，暂时注释掉
+      // {
+      //   name: 'react-swc',
+      //   display: 'JavaScript + SWC',
+      //   color: blue,
+      // },
+      // {
+      //   name: 'react-swc-ts',
+      //   display: 'TypeScript + SWC',
+      //   color: yellow,
+      // },
     ]
   }
 ];
@@ -129,7 +130,7 @@ async function init() {
             };
           })
         },
-        // 判断类型是否有其他类型，如template-ts,react-swc
+        // 判断类型是否有其他类型，如react-ts,react
         {
           type: (framework2) => framework2 && framework2.variants ? "select" : null,
           name: "variant",
