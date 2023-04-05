@@ -1,0 +1,26 @@
+{
+  "name": "create-scoffolding",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "自己项目的脚手架",
+  "bin": {
+    "create-scaffold": "src/index.ts",
+    "cva": "src/index.ts"
+  },
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild"
+  },
+  "author": "yjf",
+  "license": "MIT",
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "dependencies": {
+    "@types/node": "^18.15.11",
+    "kolorist": "^1.7.0",
+    "minimist": "^1.2.8",
+    "prompts": "^2.4.2"
+  }
+}
